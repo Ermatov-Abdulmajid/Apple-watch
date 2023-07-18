@@ -1,3 +1,7 @@
+:root {
+    --primari-text: #ea625c;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -40,15 +44,27 @@ hr {
 }
 
 .button-link {
+    display: inline-block;
+    min-width: 260px;
+    text-align: center;
     text-decoration: none; 
     color: #fff;
-    background-color: #EA625C;
+    background-color: var(--primari-text);
     padding: 12px 38px;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 150%; 
-    text-transform: uppercase;;
+    text-transform: uppercase;
+    transition: background-color 0.4s ease;
+}
+
+.button-link:hover {
+    background-color: var(--primari-text);
+}
+
+.button-link:active {
+    opacity: 0.6;
 }
 
 /* SITE-HEADER */
@@ -149,6 +165,140 @@ hr {
     padding-left: 37px;
 }   
 
+/* FEATURE */
+.feature {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.feature-wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+.feature-div-1 {
+    margin-right: 80px;
+}
+
+.feature-div-2 {
+    margin-right: 80px;
+}
+
+.feature-heading {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #222;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+    text-transform: uppercase;
+}
+
+.feature-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.feature-hr {
+    width: 8px;
+    height: 8px;
+    border: #ddd;
+    background-color: #ddd;
+    box-shadow: 16px 0 0 0 #ddd,
+    32px 0 0 0 #ddd;
+}
+
+.feature-link:before {
+    content: "";
+    width: 40px;
+    height: 3px;
+    margin-right: 10px;
+    background-color: var(--primari-text);
+    transition: width 0.3s ease;
+}
+
+.feature-link:hover::before {
+    width: 68px;
+}
+
+/* PROMO */
+.promo {
+    padding-bottom: 70px;
+}
+
+.promo-div {
+    display: flex;
+    align-items: center;
+}
+
+.promo-div-wrapper {
+    margin-right: 110px;
+}
+
+.promo-link {
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none; 
+    color: #fff;
+    background-color: var(--primari-text);
+    padding: 12px 38px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+.site-footer {
+    background-image: url(../img/runners\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.footer-div-wrapper {
+    padding-top: 350px;
+    padding-bottom: 350px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-heading {
+    color: #FFF;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.footer-text {
+    width: 450px;
+    height: 120px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-left: 3px solid #fff;
+    padding-left: 37px;
+}
+
+
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -159,6 +309,6 @@ only screen and (                min-resolution: 2dppx) {
 
     .hero {
         background-image: url("../img/watches@2x.png");
-    }     
+    }
 
 }
