@@ -10,12 +10,10 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    height: 100%;
     padding: 0px;
     margin: 0px;
-    font-family: "Rubik", "Arial", Sans-Serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
-    line-height: 22px;
 }
 
 img {
@@ -30,9 +28,137 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1240px;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 1100px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-left: auto;
     margin-right: auto;
+}
+
+hr {
+    margin: 0;
+}
+
+.button-link {
+    text-decoration: none; 
+    color: #fff;
+    background-color: #EA625C;
+    padding: 12px 38px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+    text-transform: uppercase;;
+}
+
+/* SITE-HEADER */
+.site-header {
+    margin-top: 30px;
+    padding-bottom: 91px;
+}
+
+.header-flex-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header-icon {
+    display: block;
+    width: 35px;
+    height: 42px;
+    margin-right: 502px;
+    transition: 0.4s ease;
+}
+
+.header-icon:hover {
+    opacity: 0.8;
+}
+
+.header-icon:active {
+    opacity: 0.6;
+}
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.site-nav-li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.site-nav-li {
+    margin: 0;
+    margin-right: 40px;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.header-input {
+    border: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #333;
+}
+
+/* MAIN */
+.hero {
+    padding-top: 91px;
+    padding-bottom: 183px;
+    background-image: url("../img/watches.jpg");
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left calc(50% + 550px) bottom;
+    border-bottom: 1px solid #ddd;
+}
+
+.hero-div {
+    display: flex;
+    align-items: center;
+    width: 490px;
+    height: 291px;
+}
+
+.hero-heading {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #000;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.hero-text {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: #777;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    border-left: 3px solid #888;
+    padding-left: 37px;
+}   
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
+    .hero {
+        background-image: url("../img/watches@2x.png");
+    }     
+
 }
